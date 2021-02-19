@@ -60,6 +60,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITabBarDelegate,
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("movie selected")
+        //Find out which movie was selected
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        //send movie information
+        let movieDetailedPage = segue.destination as! MovieDetailsViewController
+        movieDetailedPage.movie = movie
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
 
 }
