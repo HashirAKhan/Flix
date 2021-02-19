@@ -53,6 +53,7 @@
                                             <outlet property="posterView" destination="t2W-jo-0Ww" id="nD3-py-0rA"/>
                                             <outlet property="synopsisLabel" destination="5mR-SF-2aR" id="N6h-Ew-nBx"/>
                                             <outlet property="titleLabel" destination="W58-Fy-cVf" id="hHZ-dM-hrk"/>
+                                            <segue destination="DDA-iG-LUm" kind="show" id="4nH-Kf-cdx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -69,6 +70,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1037.3831775700935" y="79.697624190064801"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="dWR-Rc-z03">
+            <objects>
+                <viewController id="DDA-iG-LUm" customClass="MovieDetailsViewController" customModule="Flix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QSm-dr-gv5" customClass="MovieDetailsViewControllerMovieDetailsViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Sdh-QE-CVT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hc3-eN-KcN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHe-Nl-05m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dhK-uR-DfS">
